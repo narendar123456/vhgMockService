@@ -20,6 +20,7 @@ public class vhgController {
     public ResponseEntity<Response> sayHello() {
         Response response = new Response();
         response.setMessage("hai");
+        //Accessing service class from library
         vhgService1.printServiceName();
 
         return new ResponseEntity<>( response, HttpStatus.OK);
